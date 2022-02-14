@@ -1,14 +1,14 @@
-import process from 'node:process';
-import readline from 'node:readline';
-import chalk from 'chalk';
-import cliCursor from 'cli-cursor';
-import cliSpinners from 'cli-spinners';
-import logSymbols from 'log-symbols';
-import stripAnsi from 'strip-ansi';
-import wcwidth from 'wcwidth';
-import isInteractive from 'is-interactive';
-import isUnicodeSupported from 'is-unicode-supported';
-import {BufferListStream} from 'bl';
+const process = require("node:process");
+const readline = require("readline");
+const chalk = require("chalk");
+const cliCursor = require("cli-cursor");
+const cliSpinners = require("cli-spinners");
+const logSymbols = require("log-symbols");
+const stripAnsi = require("strip-ansi");
+const wcwidth = require("wcwidth");
+const isInteractive = require("is-interactive");
+const isUnicodeSupported = require("is-unicode-supported");
+const { BufferListStream } = require("bl");
 
 const TEXT = Symbol('text');
 const PREFIX_TEXT = Symbol('prefixText');
